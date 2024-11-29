@@ -1,0 +1,116 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Right Horizontal Navigation */
+.side-nav {
+    position: fixed;
+    top: 0;
+    right: 0; /* Position the navigation on the right */
+    display: flex;
+    justify-content: flex-start; /* Align items to the right */
+    padding: 10px 20px;
+    z-index: 1000;
+    width: auto;
+}
+
+.navA {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(9, 98, 153);
+    border-radius: 30px;
+    margin: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navA:hover, .active {
+    background: #076981;
+    color: rgb(228, 222, 222);
+}
+
+/* Main Body Section */
+.mainBody {
+    background-image: url('https://images.pexels.com/photos/1632207/pexels-photo-1632207.jpeg'); /* Beach Sunset Background */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styles */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.scoo1 {
+    background-image: url('https://img.freepik.com/premium-photo/panoramic-view-exotic-beaches-from-around-world-celebrating-stunning-coastal-paradise_875722-40662.jpg'); /* Forest Landscape */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white;
+}
+
+.scoo2 {
+    background-image: url('https://images.pexels.com/photos/3842303/pexels-photo-3842303.jpeg'); /* Scenic Road */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white;
+}
+
+.scoo3 {
+    background-image: url('https://images.pexels.com/photos/2313740/pexels-photo-2313740.jpeg'); /* Sunset over Ocean */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white;
+}
+
+.scoo4 {
+    background: #333;
+    color: white;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navA {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+}
